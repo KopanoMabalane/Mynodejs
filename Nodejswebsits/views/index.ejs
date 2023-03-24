@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        p {
+            font-size: 30px;
+        }
+        input {
+            width: 300px;
+        }
+        @media (max-width: 768px) {
+  /* CSS rules to apply when the device width is less than or equal to 768 pixels */
+         input {
+         width: 90%;
+          }
+          button {
+         width: 100px;
+          }
+    }
+    button {
+        background-color: black;
+        color:white;
+        width: 200px;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+    }
+    </style>
+    <header>
+        <h1>Librohub</h1>
+        <form action="/about" method="post">
+            <button>About Us</button>
+        </form>
+    </header>
+    <main>
+        <p>Do you have a book/notes for a certain module or anything that another student that need to be bought by another student</p>
+        <p>OR</p>
+        <p>You want to buy anything the university requires you to buy(from books to books pdf)?</p>
+        <p>Leave your email with us so that we can help you when we launch</p>
+        <form action="/email" method="post">
+            <input type="email" id="signup" name="email">
+            <button onclick="Signin()">SEND</button>
+        </form>
+    </main>
+    <script>
+    
+    </script>
+</body>
+</html>
